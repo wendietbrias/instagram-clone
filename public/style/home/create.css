@@ -1,0 +1,137 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: "Montserrat",sans-serif;
+}
+
+html {
+    scroll-behavior:smooth;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+  }
+
+.container {
+    width:100vw;
+    background-color:#F5F5F5;
+    display:flex;
+    align-items:flex-start;
+    justify-content: space-between;
+}
+
+.sidebar {
+    width:22%;
+    height:100vh;
+    overflow-y:scroll;
+    background-color: #fff;
+    padding:1.5rem 2rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar h2 {
+    text-align:center;
+}
+
+.sidebar h2 a {
+    text-decoration:none;
+    color:#101010;
+}
+
+.sidebar-links {
+    display:flex;
+    flex-direction: column;
+    row-gap:30px;
+    margin-top:40px;
+}
+
+.sidebar-links a {
+    text-decoration:none;
+    display: flex;
+    column-gap:15px;
+    align-items: center;
+    
+}
+
+.sidebar-links a.active {
+    opacity:0.5;
+}
+
+.sidebar-links a i {
+  font-size:1.6em;
+}
+
+.sidebar-links a p {
+    font-size:1rem;
+    font-weight:600;
+}
+
+.logout-btn {
+    outline:none;
+    border:none;
+    background:none;
+    display: flex;
+    align-items: center;
+    font-size:0.9rem;
+    font-weight:600;
+    column-gap:12px;
+    cursor:pointer;
+}
+
+.main {
+    width:88%;
+    height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.form-container h2 {
+    font-size:1.5rem;
+    text-align:center;
+}
+
+form {
+    margin-top:30px;
+    display:flex;
+    flex-direction: column;
+    row-gap:10px;
+}
+
+.form-control {
+    width:500px;
+}
+
+
+.form-control input {
+    width:100%;
+    background-color:#fff;
+    padding:0.65rem 1rem;
+    border-radius: 6px;
+    border:none;
+    outline:none;
+}
+
+.form-control textarea {
+    border:none;
+    outline:none;
+    width:100%;
+    padding:0.65rem 1rem;
+    height:150px;
+}
+
+#submit-post {
+    padding: 0.7em;
+    border:none;
+    cursor:pointer;
+    outline:none;
+    border-radius:6px;
+    margin-top:20px;
+    background-color: #5BC0F8;
+    color:#fff;
+    font-weight: 500;
+}
